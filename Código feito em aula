@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Dispensador{
+    int topo;
+    int capa;
+    float *pElem;
+}
+
+
+void criarDispensador(struct Dispensador *p,int c){
+    p->topo =-1;
+    p->capa=c;
+    p->pElem=(float*)malloc (c*sizeof(float));
+}
+
+int push(struct Dispensador *p,int quantidade){
+    p->topo ++;
+    p->pElem=quantidade;
+    printf("%f",pElem);
+}
+
+int main (){
+    int quantidade,mydispensador,capTotal=3;
+    float *pElem;
+criarDispensador(&mydispensador,capTotal);
+
+    printf("Quantidade de copos:");
+    scanf("%d",&pElem);
+
+push(&quantidade,pElem);{
+pElem=1;
+p->pElem=quantidade;
+quantidade=capTotal;
+return pElem;
+}
+
+ 
+
+}
