@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// função de comparação para a função qsort. comparação entre os inteiros apontados por a e b, 
+retornando a diferença entre eles. Isso é necessário para ordenar um array de inteiros em ordem decrescente com qsort.
+
 int cmp(const void* a, const void* b){ 
 return *(int*)b - *(int*)a ; 
 } 
+
+// recebe uma matriz de inteiros amounte seu tamanho amountSize. A função
+qsort é usada para ordenar o array amountem ordem decrescente usando a função de comparação cmpque definimos anteriormente.
 
 int fillCups(int* amount, int amountSize){ 
   qsort(amount, amountSize, sizeof(int), cmp) ; 
